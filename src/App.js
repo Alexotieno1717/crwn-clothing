@@ -3,7 +3,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import ShopPage from './pages/shop/shop.component';
-import Header from './components/header/header.component';
+import Header from './component/header/header.component';
 import signInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { connect } from 'react-redux';
