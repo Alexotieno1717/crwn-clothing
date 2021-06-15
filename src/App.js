@@ -5,7 +5,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import ShopPage from './pages/shop/shop.component';
 import Header from './component/header/header.component';
 import CheckoutPage from './pages/checkout/checkout.component';
-import signInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.action';
@@ -52,7 +52,7 @@ class App extends React.Component {
           this.props.currentUser ? (
             <Redirect to='/' />
           ) : (
-            <signInAndSignUpPage />
+            <SignInAndSignUpPage />
           )
           } />
         </Switch>
